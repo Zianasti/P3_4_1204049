@@ -37,21 +37,21 @@
             this.cbJK = new System.Windows.Forms.ComboBox();
             this.dtTglLahir = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.cbKomposer = new System.Windows.Forms.CheckBox();
+            this.cbKonduktor = new System.Windows.Forms.CheckBox();
+            this.cbVokal = new System.Windows.Forms.CheckBox();
+            this.cbDrum = new System.Windows.Forms.CheckBox();
+            this.cbPiano = new System.Windows.Forms.CheckBox();
+            this.cbSaxophone = new System.Windows.Forms.CheckBox();
             this.cbBiola = new System.Windows.Forms.CheckBox();
             this.cbGitar = new System.Windows.Forms.CheckBox();
-            this.cbSaxophone = new System.Windows.Forms.CheckBox();
-            this.cbPiano = new System.Windows.Forms.CheckBox();
-            this.cbDrum = new System.Windows.Forms.CheckBox();
-            this.cbVokal = new System.Windows.Forms.CheckBox();
-            this.rbJadwal1 = new System.Windows.Forms.RadioButton();
-            this.rbJadwal2 = new System.Windows.Forms.RadioButton();
-            this.rbJadwal3 = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rbJadwal4 = new System.Windows.Forms.RadioButton();
-            this.cbKonduktor = new System.Windows.Forms.CheckBox();
-            this.cbKomposer = new System.Windows.Forms.CheckBox();
+            this.rbJadwal3 = new System.Windows.Forms.RadioButton();
+            this.rbJadwal2 = new System.Windows.Forms.RadioButton();
+            this.rbJadwal1 = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -142,41 +142,65 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pilihan Kelas";
             // 
-            // groupBox2
+            // cbKomposer
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.rbJadwal4);
-            this.groupBox2.Controls.Add(this.rbJadwal3);
-            this.groupBox2.Controls.Add(this.rbJadwal2);
-            this.groupBox2.Controls.Add(this.rbJadwal1);
-            this.groupBox2.Location = new System.Drawing.Point(382, 264);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(350, 261);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Pilihan Jadwal";
+            this.cbKomposer.AutoSize = true;
+            this.cbKomposer.Location = new System.Drawing.Point(192, 214);
+            this.cbKomposer.Name = "cbKomposer";
+            this.cbKomposer.Size = new System.Drawing.Size(117, 26);
+            this.cbKomposer.TabIndex = 18;
+            this.cbKomposer.Text = "Komposer";
+            this.cbKomposer.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // cbKonduktor
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(231, 553);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 38);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "&Tampilkan";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.cbKonduktor.AutoSize = true;
+            this.cbKonduktor.Location = new System.Drawing.Point(21, 213);
+            this.cbKonduktor.Name = "cbKonduktor";
+            this.cbKonduktor.Size = new System.Drawing.Size(118, 26);
+            this.cbKonduktor.TabIndex = 17;
+            this.cbKonduktor.Text = "Konduktor";
+            this.cbKonduktor.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // cbVokal
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.button2.Location = new System.Drawing.Point(382, 553);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 38);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Selesai";
-            this.button2.UseVisualStyleBackColor = false;
+            this.cbVokal.AutoSize = true;
+            this.cbVokal.Location = new System.Drawing.Point(192, 164);
+            this.cbVokal.Name = "cbVokal";
+            this.cbVokal.Size = new System.Drawing.Size(81, 26);
+            this.cbVokal.TabIndex = 16;
+            this.cbVokal.Text = "Vokal";
+            this.cbVokal.UseVisualStyleBackColor = true;
+            // 
+            // cbDrum
+            // 
+            this.cbDrum.AutoSize = true;
+            this.cbDrum.Location = new System.Drawing.Point(192, 108);
+            this.cbDrum.Name = "cbDrum";
+            this.cbDrum.Size = new System.Drawing.Size(79, 26);
+            this.cbDrum.TabIndex = 15;
+            this.cbDrum.Text = "Drum";
+            this.cbDrum.UseVisualStyleBackColor = true;
+            // 
+            // cbPiano
+            // 
+            this.cbPiano.AutoSize = true;
+            this.cbPiano.Location = new System.Drawing.Point(192, 54);
+            this.cbPiano.Name = "cbPiano";
+            this.cbPiano.Size = new System.Drawing.Size(82, 26);
+            this.cbPiano.TabIndex = 14;
+            this.cbPiano.Text = "Piano";
+            this.cbPiano.UseVisualStyleBackColor = true;
+            // 
+            // cbSaxophone
+            // 
+            this.cbSaxophone.AutoSize = true;
+            this.cbSaxophone.Location = new System.Drawing.Point(21, 164);
+            this.cbSaxophone.Name = "cbSaxophone";
+            this.cbSaxophone.Size = new System.Drawing.Size(127, 26);
+            this.cbSaxophone.TabIndex = 13;
+            this.cbSaxophone.Text = "Saxophone";
+            this.cbSaxophone.UseVisualStyleBackColor = true;
             // 
             // cbBiola
             // 
@@ -198,69 +222,30 @@
             this.cbGitar.Text = "Gitar";
             this.cbGitar.UseVisualStyleBackColor = true;
             // 
-            // cbSaxophone
+            // groupBox2
             // 
-            this.cbSaxophone.AutoSize = true;
-            this.cbSaxophone.Location = new System.Drawing.Point(21, 164);
-            this.cbSaxophone.Name = "cbSaxophone";
-            this.cbSaxophone.Size = new System.Drawing.Size(127, 26);
-            this.cbSaxophone.TabIndex = 13;
-            this.cbSaxophone.Text = "Saxophone";
-            this.cbSaxophone.UseVisualStyleBackColor = true;
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.rbJadwal4);
+            this.groupBox2.Controls.Add(this.rbJadwal3);
+            this.groupBox2.Controls.Add(this.rbJadwal2);
+            this.groupBox2.Controls.Add(this.rbJadwal1);
+            this.groupBox2.Location = new System.Drawing.Point(382, 264);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(350, 261);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Pilihan Jadwal";
             // 
-            // cbPiano
+            // rbJadwal4
             // 
-            this.cbPiano.AutoSize = true;
-            this.cbPiano.Location = new System.Drawing.Point(192, 54);
-            this.cbPiano.Name = "cbPiano";
-            this.cbPiano.Size = new System.Drawing.Size(82, 26);
-            this.cbPiano.TabIndex = 14;
-            this.cbPiano.Text = "Piano";
-            this.cbPiano.UseVisualStyleBackColor = true;
-            // 
-            // cbDrum
-            // 
-            this.cbDrum.AutoSize = true;
-            this.cbDrum.Location = new System.Drawing.Point(192, 108);
-            this.cbDrum.Name = "cbDrum";
-            this.cbDrum.Size = new System.Drawing.Size(79, 26);
-            this.cbDrum.TabIndex = 15;
-            this.cbDrum.Text = "Drum";
-            this.cbDrum.UseVisualStyleBackColor = true;
-            // 
-            // cbVokal
-            // 
-            this.cbVokal.AutoSize = true;
-            this.cbVokal.Location = new System.Drawing.Point(192, 164);
-            this.cbVokal.Name = "cbVokal";
-            this.cbVokal.Size = new System.Drawing.Size(81, 26);
-            this.cbVokal.TabIndex = 16;
-            this.cbVokal.Text = "Vokal";
-            this.cbVokal.UseVisualStyleBackColor = true;
-            // 
-            // rbJadwal1
-            // 
-            this.rbJadwal1.AutoSize = true;
-            this.rbJadwal1.Location = new System.Drawing.Point(29, 52);
-            this.rbJadwal1.Name = "rbJadwal1";
-            this.rbJadwal1.Size = new System.Drawing.Size(262, 26);
-            this.rbJadwal1.TabIndex = 0;
-            this.rbJadwal1.TabStop = true;
-            this.rbJadwal1.Text = "Senin & Rabu, 14.00 - 16.00";
-            this.rbJadwal1.UseMnemonic = false;
-            this.rbJadwal1.UseVisualStyleBackColor = true;
-            // 
-            // rbJadwal2
-            // 
-            this.rbJadwal2.AutoSize = true;
-            this.rbJadwal2.Location = new System.Drawing.Point(29, 108);
-            this.rbJadwal2.Name = "rbJadwal2";
-            this.rbJadwal2.Size = new System.Drawing.Size(277, 26);
-            this.rbJadwal2.TabIndex = 1;
-            this.rbJadwal2.TabStop = true;
-            this.rbJadwal2.Text = "Selasa & Kamis, 14.00 - 16.00";
-            this.rbJadwal2.UseMnemonic = false;
-            this.rbJadwal2.UseVisualStyleBackColor = true;
+            this.rbJadwal4.AutoSize = true;
+            this.rbJadwal4.Location = new System.Drawing.Point(29, 212);
+            this.rbJadwal4.Name = "rbJadwal4";
+            this.rbJadwal4.Size = new System.Drawing.Size(209, 26);
+            this.rbJadwal4.TabIndex = 3;
+            this.rbJadwal4.TabStop = true;
+            this.rbJadwal4.Text = "Minggu, 13.00 - 17.00";
+            this.rbJadwal4.UseVisualStyleBackColor = true;
             // 
             // rbJadwal3
             // 
@@ -274,36 +259,51 @@
             this.rbJadwal3.UseMnemonic = false;
             this.rbJadwal3.UseVisualStyleBackColor = true;
             // 
-            // rbJadwal4
+            // rbJadwal2
             // 
-            this.rbJadwal4.AutoSize = true;
-            this.rbJadwal4.Location = new System.Drawing.Point(29, 212);
-            this.rbJadwal4.Name = "rbJadwal4";
-            this.rbJadwal4.Size = new System.Drawing.Size(209, 26);
-            this.rbJadwal4.TabIndex = 3;
-            this.rbJadwal4.TabStop = true;
-            this.rbJadwal4.Text = "Minggu, 13.00 - 17.00";
-            this.rbJadwal4.UseVisualStyleBackColor = true;
+            this.rbJadwal2.AutoSize = true;
+            this.rbJadwal2.Location = new System.Drawing.Point(29, 108);
+            this.rbJadwal2.Name = "rbJadwal2";
+            this.rbJadwal2.Size = new System.Drawing.Size(277, 26);
+            this.rbJadwal2.TabIndex = 1;
+            this.rbJadwal2.TabStop = true;
+            this.rbJadwal2.Text = "Selasa & Kamis, 14.00 - 16.00";
+            this.rbJadwal2.UseMnemonic = false;
+            this.rbJadwal2.UseVisualStyleBackColor = true;
             // 
-            // cbKonduktor
+            // rbJadwal1
             // 
-            this.cbKonduktor.AutoSize = true;
-            this.cbKonduktor.Location = new System.Drawing.Point(21, 213);
-            this.cbKonduktor.Name = "cbKonduktor";
-            this.cbKonduktor.Size = new System.Drawing.Size(118, 26);
-            this.cbKonduktor.TabIndex = 17;
-            this.cbKonduktor.Text = "Konduktor";
-            this.cbKonduktor.UseVisualStyleBackColor = true;
+            this.rbJadwal1.AutoSize = true;
+            this.rbJadwal1.Location = new System.Drawing.Point(29, 52);
+            this.rbJadwal1.Name = "rbJadwal1";
+            this.rbJadwal1.Size = new System.Drawing.Size(262, 26);
+            this.rbJadwal1.TabIndex = 0;
+            this.rbJadwal1.TabStop = true;
+            this.rbJadwal1.Text = "Senin & Rabu, 14.00 - 16.00";
+            this.rbJadwal1.UseMnemonic = false;
+            this.rbJadwal1.UseVisualStyleBackColor = true;
             // 
-            // cbKomposer
+            // button1
             // 
-            this.cbKomposer.AutoSize = true;
-            this.cbKomposer.Location = new System.Drawing.Point(192, 214);
-            this.cbKomposer.Name = "cbKomposer";
-            this.cbKomposer.Size = new System.Drawing.Size(117, 26);
-            this.cbKomposer.TabIndex = 18;
-            this.cbKomposer.Text = "Komposer";
-            this.cbKomposer.UseVisualStyleBackColor = true;
+            this.button1.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(231, 553);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(114, 38);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "&Tampilkan";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.button2.Location = new System.Drawing.Point(382, 553);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(85, 38);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "&Selesai";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
